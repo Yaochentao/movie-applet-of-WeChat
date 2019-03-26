@@ -1,0 +1,18 @@
+/* pages/find/find.wxss */
+.scroll-view-item {
+  width: 300rpx;
+  height: 200px;
+  display:inline-block;
+}
+.bc_green {
+  background: green
+}
+.bc_red {
+  background: red
+}
+.bc_yellow {
+  background: yellow
+}
+.bc_blue {
+  background: blue
+}

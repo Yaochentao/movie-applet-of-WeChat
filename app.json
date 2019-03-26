@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/find/find",
+    "pages/my/my",
+    "pages/movie/movie",
+    "pages/prevue/prevue"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat", 
+    "navigationBarTextStyle":"black"
+  },
+
+
+  "tabBar": {
+    "color": "#9b9b9b",
+    "selectedColor": "#494949",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "热映",
+        "iconPath": "./image/tab/1-nor.png",
+        "selectedIconPath": "./image/tab/1-sel.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "找片",
+        "iconPath": "./image/tab/2-nor.png",
+        "selectedIconPath": "./image/tab/2-sel.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./image/tab/3-nor.png",
+        "selectedIconPath": "./image/tab/3-sel.png"
+      }
+    ]
+  }
+
+}

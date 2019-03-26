@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <header>
+    <view class="search-con">
+      <span class="city">杭州
+        <!-- <icon type="search" size="32rpx" /> -->
+      </span>
+      <span class="search">
+        <icon type="search" size="32rpx" /> 电影 / 电视剧 / 影人
+      </span>
+    </view>
+    <!-- <div class="tab-con">
+      <span class="tab-1">正在热映</span>
+      <span class="tab-2">即将上映</span>
+    </div> -->
+  </header>
+
+  <view class="movie-con">
+      <view class="movie-item" wx:for="{{inTheaters}}" wx:for-item="movie" wx:key="id" bindtap='toMovie' data-id="{{movie.id}}">
+        <image src='{{movie.images.large}}' class="movie-img"></image>
+        <view class="movie-info">
+          <p class="name">{{movie.title}}</p>
+          <p class="actor-info">暂无评分</p>
+          <p class="actor-info">导演：{{movie.directors[0].name}}</p>
+          <p class="actor-info">主演: <text wx:for="{{movie.casts}}" wx:for-item="cast" wx:key="id">{{cast.name}} / </text></p>
+          
+        </view>
+        <view class="buy">
+          <p class="man-num">{{movie.collect_count}}人看过</p>
+          <span class="buy-btn">购票</span>
+
+        </view>
+      </view>
+    <!-- <view>{{inTheaters[0].title}}</view> -->
+  </view>
+</view>
